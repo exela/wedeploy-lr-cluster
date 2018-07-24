@@ -1,3 +1,6 @@
 {
-	"id": "nginx"
+	"id": "nginx",
+	"cpu": 4,
+	"memory": 4096,
+	"dependencies": ["lr1", "lr2", "lr3"]
 }
