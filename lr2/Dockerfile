@@ -14,8 +14,12 @@ RUN apt-get update && \
 
 RUN apt-get install -y oracle-java8-set-default
 
-COPY /liferay-dxp-7.1.10-ga1/ /opt/lr2/
+COPY /liferay-dxp-7.1.10-ga1/ /opt/lr/
 
-WORKDIR /opt/lr2/tomcat/bin/
+RUN rm -rf /opt/lr/webapps/ROOT/WEB-INF/classes/ehcache/
+
+COPY /cluster/ /opt/lr/
+
+WORKDIR /opt/lr/tomcat/bin/
 
 CMD ["./catalina.sh", "run"]
