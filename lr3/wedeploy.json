@@ -5,8 +5,8 @@
 		"data3": "/opt/lr3/data",
 		"deploy3": "/opt/lr3/deploy"
 	},
-	"cpu": 6,
-	"memory": 8192,
-	"dependencies": ["search", "db"],
+	"cpu": 8,
+	"memory": 16384,
+	"dependencies": ["search", "db", "lr1", "lr2"],
 	"port": 8080
 }

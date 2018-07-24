@@ -4,6 +4,6 @@
 	"volumes": {
 		"esdata": "/usr/share/elasticsearch/data"
 	},
-	"cpu": 4,
-	"memory": 8192
+	"cpu": 8,
+	"memory": 16384
 }
