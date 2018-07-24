@@ -14,11 +14,16 @@ RUN apt-get update && \
 
 RUN apt-get install -y oracle-java8-set-default
 
+RUN apt-get -y install curl
+
 COPY /liferay-dxp-7.1.10-ga1/ /opt/lr/
 
 RUN rm -rf /opt/lr/webapps/ROOT/WEB-INF/classes/ehcache/
 
 COPY /cluster/ /opt/lr/
+
+HEALTHCHECK --start-period=3m \
+  CMD curl -fsS 'http://localhost:8080/c/portal/layout' || exit 1
 
 WORKDIR /opt/lr/tomcat/bin/
 
