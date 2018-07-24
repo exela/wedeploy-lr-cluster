@@ -2,5 +2,5 @@
 	"id": "nginx",
 	"cpu": 4,
 	"memory": 16384,
-	"dependencies": ["lr1", "lr2", "lr3"]
+	"dependencies": ["lr1", "lr2"]
 }
