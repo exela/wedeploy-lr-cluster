@@ -3,16 +3,11 @@
 	"volumes": {
 		"osgi2": "/opt/lr/osgi",
 		"data2": "/opt/lr/data",
-		"deploy2": "/opt/lr/deploy"
+		"deploy2": "/opt/lr/deploy",
+		"doclib": "/opt/lr/data/document_library"
 	},
 	"cpu": 8,
 	"memory": 16384,
 	"dependencies": ["search", "db", "lr1"],
-	"port": 8080,
-	"healthCheck": {
-		"command": "curl -fsS 'http://localhost:8080/c/portal/layout'",
-		"timeout": 60,
-		"startPeriod": 180,
-		"retries": 10
-	}
+	"port": 8080
 }

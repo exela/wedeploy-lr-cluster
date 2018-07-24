@@ -3,7 +3,8 @@
 	"volumes": {
 		"osgi": "/opt/lr/osgi",
 		"data": "/opt/lr/data",
-		"deploy": "/opt/lr/deploy"
+		"deploy": "/opt/lr/deploy",
+		"doclib": "/opt/lr/data/document_library"
 	},
 	"cpu": 8,
 	"memory": 16384,
