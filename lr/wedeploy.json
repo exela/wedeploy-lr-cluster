@@ -10,7 +10,7 @@
 	"dependencies": ["search", "db"],
 	"port": 8080,
 	"healthCheck": {
-		"url": "localhost:8080",
+		"command": "curl -fsS 'http://localhost:8080/c/portal/layout'",
 		"timeout": 60,
 		"startPeriod": 180,
 		"retries": 10
