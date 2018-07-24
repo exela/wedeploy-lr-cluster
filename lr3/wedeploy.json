@@ -1,0 +1,12 @@
+{
+	"id": "lr3",
+	"volumes": {
+		"osgi3": "/opt/lr3/osgi",
+		"data3": "/opt/lr3/data",
+		"deploy3": "/opt/lr3/deploy"
+	},
+	"cpu": 6,
+	"memory": 8192,
+	"dependencies": ["search", "db"],
+	"port": 8080
+}
