@@ -9,5 +9,11 @@
 	"cpu": 8,
 	"memory": 16384,
 	"dependencies": ["search", "db"],
-	"port": 8080
+	"port": 8080,
+	"healthCheck": {
+		"url": "localhost:8080",
+		"timeout": 99999,
+		"startPeriod": 180,
+		"retries": 3
+	}
 }
